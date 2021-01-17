@@ -1,10 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   // Unix timestamp (in seconds) to count down to
-  var twoDaysFromNow = (new Date().getTime() / 1000) + (86400 * 2) + 1;
-
+  // var twoDaysFromNow = (new Date().getTime() / 1000) + (86400 * 2) + 1;
+ 
   // Set up FlipDown
-  var flipdown = new FlipDown(twoDaysFromNow)
+  // var flipdown = new FlipDown(twoDaysFromNow)
+  var flipdown = new FlipDown(Date.parse('22 Jan 2021 14:00:00 CET'))
 
     // Start the countdown
     .start()
@@ -14,15 +15,22 @@ document.addEventListener('DOMContentLoaded', () => {
       console.log('The countdown has ended!');
     });
 
+  // Black Theme
+    body.querySelector('#flipdown').classList.toggle('flipdown__theme-dark');
+
+
   // Toggle theme
-  var interval = setInterval(() => {
+/*  var interval = setInterval(() => {
     let body = document.body;
     body.classList.toggle('light-theme');
     body.querySelector('#flipdown').classList.toggle('flipdown__theme-dark');
     body.querySelector('#flipdown').classList.toggle('flipdown__theme-light');
   }, 5000);
+*/
 
-  // Show version number
+/*  // Show version number
   var ver = document.getElementById('ver');
   ver.innerHTML = flipdown.version;
+*/
+
 });

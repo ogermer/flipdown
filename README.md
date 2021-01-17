@@ -1,5 +1,18 @@
 <span style="text-align:center;display:block;width:100%;"><img src="http://i.imgur.com/UtbIc4S.png" style="width:75%" title="Example of FlipDown" style="width: 500px;text-align:center"></span>
 
+
+# IMPORTANT NOTICE:
+
+This is a modified version of FlipDown in order to use it as source for OBS.
+Modifications were made in the ./example folder - including index.html, main.js, flipdown.css and style.css
+
+The result is a simple countdown to a specific time and date.
+
+Documentation (see below) etc. are left untouched.
+
+
+
+
 # FlipDown
 
 ⏰ A lightweight and performant flip styled countdown clock.

@@ -6,17 +6,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-  var dateString='2021-01-22T14:00'
-  var d = new Date(dateString)
-  console.log(d)
-  
-  var flipdownDate = (new Date(dateString).getTime() / 1000)  
+  // var dateString='2021-01-22T14:00'
+  // var d = new Date(dateString)
+  // console.log(d)
+  // var flipdownDate = (new Date(dateString).getTime() / 1000)  
 
 
 
   // Set up FlipDown
-  // var flipdown = new FlipDown(twoDaysFromNow)
-  var flipdown = new FlipDown(flipdownDate)
+  var flipdown = new FlipDown(twoDaysFromNow)
+  // var flipdown = new FlipDown(flipdownDate)
 
     // Start the countdown
     .start()

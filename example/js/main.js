@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   // Unix timestamp (in seconds) to count down to
-  var flipdownDate = (new Date().getTime() / 1000) + (86400 * 2) + 1
+  var twoDaysFromNow = (new Date().getTime() / 1000) + (86400 * 2) + 1
 
 
 

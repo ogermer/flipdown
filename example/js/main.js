@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
 ////////////////
-  console.log("---TEST---")
+  console.log("---TEST2---")
   const urlParams = new URLSearchParams(window.location.search);
   const myParam = urlParams.get('myParam');
 
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
   console.log(getParameterByName('date'))
 
   var urlDate=getParameterByName('date')
-  console.log(urlDate)
+  console.log("urlDate: ", urlDate)
 
   ////////////////
 
@@ -34,16 +34,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
   var dateString='2021-02-28T14:00'
   var d = new Date(dateString)
-  console.log(d)
+  console.log("d: ", d)
+  var d2 = new Date(dateString).getTime()/1000;
+  console.log("d2: ", d2)
+  var d3 = new Date(urlDate)
+  console.log("d3: ", d3)
 
-  
+/*
+To Do:
+clean-parse the data parameter
+strip it from quotes and unwanted characters
+add event name string as 2 lines
+
+*/
   // var dateString='2021-01-22T14:00'
   // var d = new Date(dateString)
   // console.log(d)
   // var flipdownDate = (new Date(dateString).getTime() / 1000)  
 
   // Set up FlipDown
-  var flipdown = new FlipDown(twoDaysFromNow)
+  var flipdown = new FlipDown(d2)
+  //var flipdown = new FlipDown(twoDaysFromNow)
   // var flipdown = new FlipDown(flipdownDate)
 
     // Start the countdown

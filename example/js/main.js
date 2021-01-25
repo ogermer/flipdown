@@ -20,6 +20,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   console.log(getParameterByName('param1'))
   console.log(getParameterByName('param2'))
+  console.log(getParameterByName('date'))
+
+  var urlDate=getParameterByName('date')
+  console.log(urlDate)
+
   ////////////////
 
 
@@ -27,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   var twoDaysFromNow = (new Date().getTime() / 1000) + (86400 * 2) + 1
 
-  var dateString='2021-01-28T14:00'
+  var dateString='2021-02-28T14:00'
   var d = new Date(dateString)
   console.log(d)
 

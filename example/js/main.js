@@ -1,23 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  // Unix timestamp (in seconds) to count down to
-<<<<<<< HEAD
-  var twoDaysFromNow = (new Date().getTime() / 1000) + (86400 * 2) + 1
-=======
-  var flipdownDate = (new Date().getTime() / 1000) + (86400 * 2) + 1
-
-
-
-
-  var dateString='2021-01-28T14:00'
-  var d = new Date(dateString)
-  console.log(d)
-  console.log()
-
 ////////////////
+  console.log("---TEST---")
   const urlParams = new URLSearchParams(window.location.search);
   const myParam = urlParams.get('myParam');
 
+  //console.log(window.location.search.substring(1))
+  
   console.log(window.location.href);
 
   function getParameterByName(name, url = window.location.href) {
@@ -31,15 +20,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
   console.log(getParameterByName('param1'))
   console.log(getParameterByName('param2'))
-////////////////
+  ////////////////
 
 
-  //console.log(window.location.search.substring(1))
+  // Unix timestamp (in seconds) to count down to
+
+  var twoDaysFromNow = (new Date().getTime() / 1000) + (86400 * 2) + 1
+
+  var dateString='2021-01-28T14:00'
+  var d = new Date(dateString)
+  console.log(d)
+
   
-  var flipdownDate = (new Date(dateString).getTime() / 1000)  
-
->>>>>>> some testing
-
   // var dateString='2021-01-22T14:00'
   // var d = new Date(dateString)
   // console.log(d)
